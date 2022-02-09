@@ -5,7 +5,10 @@ const Home = () => {
     <div className='home' id='home'>
         <div className='content'>
            <div className="contentBox">
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nulla!</p>
+               <h1>Hi i'm Vineet</h1>
+               <p>Web-Development and Front-End design enthusist
+                   <br></br>
+                   I like to design responsive websites and learn new technologies to improve myself</p>
            </div>
         </div>
         <div className='wave1'></div>
