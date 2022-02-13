@@ -5,10 +5,16 @@ const Home = () => {
     <div className='home' id='home'>
         <div className='content'>
            <div className="contentBox">
+             <div className='b1'>
                <h1>Hi i'm Vineet</h1>
-               <p>Web-Development and Front-End design enthusist
-                   <br></br>
-                   I like to design responsive websites and learn new technologies to improve myself</p>
+             </div>
+             <div className='b2'>
+               <p>
+                  An aspiring Web-Developer and Front-End Designer. 
+                  I like to make responsive websites and learn new
+                  technologies to improve my skills. 
+              </p>
+             </div>
            </div>
         </div>
         <div className='wave1'></div>
