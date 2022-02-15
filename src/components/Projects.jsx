@@ -1,23 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { projects } from './Data/data';
+import Card from './layout/Card';
 
-const projects = [
-  {
-    id : '1',
-    name:'Github Finder',
-    description:'Github Finder App that uses Github API to find first 300 profile names and info.'
-  },
-  {
-    id:'2'
-  }
-]
+
 
 const Projects = () => {
+
+  
   return (
     <div className='projects' id='projects'>
       <div className="pj-box">
         <h1>Projects</h1>
         <div className="pj-content">
-          
+          {projects.map((p)=>{
+            return(
+              <Card
+                key={p.id}
+                description = {p.description}
+                name = {p.name}
+                used = {p.used}
+              />
+            )
+          })}
         </div>
       </div>
     </div>
