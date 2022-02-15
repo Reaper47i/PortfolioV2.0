@@ -40,7 +40,7 @@
 
 .nav {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   background-color: aqua;
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  transition: all 700ms ease-in;
+  transition: all 0.7s ease-in-out;
 }
 
 .sidebar-hide {
@@ -88,7 +88,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  transition: all 700ms ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .sideBarList {
@@ -118,13 +118,14 @@
   height: max-content;
   /* margin-top: 1rem; */
   /* color: var(--text-2-color); */
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 
 .wrapper > div {
   position: relative;
   width: 100%;
-  height: calc(100vh - 10vh);
+  height: 100vh;
+  /* height: max-content; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +136,6 @@
 } */
 
 .home .content {
-  margin-top: 1rem;
   width: 100%;
   height: 100%;
   background-color: var(--main-bg-color);
@@ -154,26 +154,27 @@
   gap: 2rem;
   color: var(--text-2-color);
 }
+
+@media all and (max-width: 820px){
+  .contentBox{
+    flex-direction: column;
+  } 
+}
+
 .b1 {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: fit-content;
   font-size: 1.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 0 10px 3px var(--text-1-color);
   font-family:var(--font-second);
 }
-/* @media only screen and (max-width: 425px) {
-  .b1{
-    width: ;
-  }
-  
-} */
 
 .b2 {
-  width: 350px;
+  width: 40%;
   height: max-content;
   font-size: 0.9rem;
   display: flex;
@@ -184,13 +185,20 @@
   box-shadow: 0 0 10px 3px var(--text-1-color);
   font-family: var(--font-second);
 }
+
+@media all and (max-width: 820px){
+  .b2{
+    width: 80%;
+  }
+}
+
 /* <<<<------  waves ----->>>> */
 
 
 .wave1 {
+  background: url('../wave1.svg');
   width: 100%;
   height: 450px;
-  background: url('../public/wave1.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,41 +206,73 @@
 .wave2{
   width: 100%;
   height: 450px;
-  background: url("../public/wave2.svg");
+  background: url("../wave2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wave3{
+  background: url('../wave3.svg');
+  width: 100%;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
+
 /* <<<<------  waves ----->>>> */
+
+/* <<<<--- About Page ---->>>> */
 
 .about {
   background-color: var(--sidebar-bg-color);
-  /* padding-top: 10vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top
+  : 10vh; */
 }
 
 .about .info {
   margin: 10px;
   padding: 10px;
   width: 45%;
-  height: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-main);
   font-weight: 300;
   font-size: 1.1rem;
   color: var(--text-2-color);
 }
 
+/* <<<<--- About Page ---->>>> */
+
+/* <<<<--- Skills Page ---->>>> */
 .skills{
   background-color: #001220;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-
+.skills .sk-box{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skills .Skcontent{
-  margin-top: 10vh;
   width: 90%;
-  margin: 5px 5px ;
-  padding: 5px 5px;
+  margin: 5px;
+  padding: 5px;
   border-radius: 8px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -240,18 +280,24 @@
   font-family: var(--font-main);
   color: #09a356;
   box-shadow: 0px 7px 10px -4px var(--text-3-color);
+  align-content: flex-end;
+  justify-self: flex-end  ;
 }
 
-@media all and (min-width: 1024px){
+@media all and (min-width: 768px){
   .skills .Skcontent{
-    width: 50%;
+    width: 55%;
 
   }
 }
 
 .sk-h{
   grid-column: span 3;
-  padding: 1rem 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.skills .Skcontent .sk-h h3{
+  margin: 0.6rem 0;
 }
 
 .skills .Skcontent .sp{
@@ -259,6 +305,27 @@
   background-color: #09a356;
 }
 
+/* <<<<--- Skills Page ---->>>> */
 
 
 
+
+/* <<<<--- Projects Page ---->>>> */
+
+.projects{
+  background-color: var(--sidebar-bg-color);
+  font-family: var(--font-main);
+}
+
+.projects .pj-box{
+  width: 100%;
+  height: 100%;
+}
+
+.projects .pj-box .pj-content{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* <<<<--- Projects Page ---->>>> */
