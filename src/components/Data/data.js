@@ -2,19 +2,19 @@ export const projects = [
     {
       id:'1',
       name:'Zeno',
-      description:'A E-Commerce App with only the front-End Design with all the features of Cart, Login and adding and removing items also with different pages for different items',
+      description:'A E-Commerce App with only the front-End Design ',
       used:['React.Js','SCSS','Redux']
     },
     {
       id : '2',
       name:'Github Finder',
-      description:'Github Finder App that uses Github API to find first 300 profile names and info.',
+      description:'Github Finder App that uses Github API',
       used:['React.Js','MaterialUI','Github API']
     },
     {
       id:'3',
       name:'IT Logger',
-      description:'A simple IT logger in which we can post bugs and new features and remove them also using redux',
+      description:'A simple IT logger using React & Redux',
       used:['React.Js','MaterializeCSS','Postman','Express.Js']
     },
     {
@@ -26,14 +26,14 @@ export const projects = [
     {
       id:'5',
       name:'Dentist Calendar App',
-      description:'Dentist calendar App with add and remove, drag & drop features within the calendar ',
+      description:'Dentist calendar App with drag & drop features',
       used:['React.Js','Tailwind CSS','Redux']
     },
     {
       id:'6',
       name:'something',
       description:'something',
-      used:'something'
+      used:['something']
     },
     
   ]

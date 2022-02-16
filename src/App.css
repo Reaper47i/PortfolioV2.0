@@ -333,9 +333,10 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(170px,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-auto-rows: minmax(200px,1fr);
   place-items: center;
+  gap: 15px;
 }
 
 /* <<<<--- Projects Page ---->>>> */
@@ -356,14 +357,16 @@
   width: 100%;
 }
 
+
 .card img{
-  width: 90%;
-  height: 90%;
+  width: 250px;
+  height: 170px;
 }
 
 .card .card-body .card-name{
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 .card .card-desc{
   font-size: 0.8rem;
@@ -371,6 +374,22 @@
   color: whitesmoke;
 }
 
+.card .card-body .card-used{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 5px;
+}
+
+.bubble{
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border: 1px solid var(--text-3-color);
+  color: whitesmoke;
+  border-radius: 15px;
+  background-color: var(--text-3-color);
+}
 /* <<<<--- Card Util ---->>>> */
 
 
