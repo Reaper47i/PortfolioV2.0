@@ -35,10 +35,5 @@ export const projects = [
       description:'something',
       used:'something'
     },
-    {
-      id:'7',
-      name:'something',
-      description:'something',
-      used:'something'
-    },
+    
   ]

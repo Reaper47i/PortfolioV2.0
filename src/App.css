@@ -122,16 +122,16 @@
 .wrapper > div {
   position: relative;
   width: 100%;
-  height: 100vh;
-  /* height: max-content; */
+  /* height: 100vh; */
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* .home{
-  justify-content: space-between;
-} */
+.home{
+  margin-top: 20vh;
+}
 
 .home .content {
   width: 100%;
@@ -317,18 +317,25 @@
 .projects{
   background-color: var(--sidebar-bg-color);
   font-family: var(--font-main);
+  
 }
 
 .projects .pj-box{
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  margin:1rem;
 }
 
 .projects .pj-box .pj-content{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(170px,1fr);
+  place-items: center;
 }
 
 /* <<<<--- Projects Page ---->>>> */
@@ -337,24 +344,29 @@
 /* <<<<--- Card Util ---->>>> */
 
 .card{
-  min-width: 200px;
-  min-height: 170px;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px; 
+
 }
 .card .card-body{
   width: 100%;
 }
-.card .card-img{
-  width: max-content;
-  height: 100px;
+
+.card img{
+  width: 90%;
+  height: 90%;
 }
 
+.card .card-body .card-name{
+  width: 100%;
+  font-size: 1rem;
+}
 .card .card-desc{
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 800;
   color: whitesmoke;
 }

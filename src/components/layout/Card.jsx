@@ -12,9 +12,9 @@ function Used(props){
 function Card(props){
     return(
       <div className='card'>
-        <div className="card-img"></div>
+        <img src="" alt="" />
         <div className="card-body">
-            <div className="card-name">{props.name}</div>
+            <span className="card-name">{props.name}</span>
           <div className="card-desc">{props.description}</div>
           <div className="card-used">
              <Used array = {props.used} /> 
